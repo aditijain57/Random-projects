@@ -1,0 +1,57 @@
+# Python code to convert string to list character-wise
+def Convert(string):
+	list1=[]
+	list1[:0]=string
+	return list1
+
+def encrypt(key, string1) :
+    for i in range(len(string1)) :
+        s = string1[i]
+        s = chr(ord(s) + key[i % len(key)])
+        string1[i] = s 
+    return string1
+
+
+str1=input()
+print(Convert(str1))
+
+
+==================================
+digit=[int(x) for x in (num)]
+==================================
+def encrypt(key, string1) :
+    for i in range(len(string1)) :
+        s = string1[i]
+        s = chr(ord(s) + key[i % len(key)])
+        string1[i] = s 
+    return string1
+
+key = [1,2,3]
+str1 = ['a','b','c']
+print(encrypt(key,str1))
+
+
+
+===================================
+#caesars cipher
+import random
+
+def Convert(string):
+	list1=[]
+	list1[:0]=string
+	return list1
+
+def encrypt(key, string1) :
+    for i in range(len(string1)) :
+        s = string1[i]
+        s = chr(ord(s) + key[i % len(key)])
+        string1[i] = s 
+    return string1
+
+key = random.randint(0,10000000000000000)
+convert = str(key)
+list1=[]
+list1[:0]= convert
+#print(list)
+    
+    
